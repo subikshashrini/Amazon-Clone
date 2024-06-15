@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon-like Login Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .login-container {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    width: 350px;
+    text-align: center;
+  }
+
+  .amazon-logo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .login-header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .login-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+
+  .terms-checkbox {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .login-button,
+  .signup-button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    text-decoration: none; /* Remove underline from link within button */
+    display: inline-block;
+  }
+
+  .signup-button {
+    background-color: #f0c14b;
+    color: #111;
+    text-decoration: none; /* Remove underline from link within button */
+    display: inline-block;
+
+  }
+</style>
+</head>
+<body>
+  <div class="login-container">
+    <img class="amazon-logo" src="amazon.png" alt="Amazon Logo">
+    <input class="login-input" type="text" placeholder="Email or mobile phone number">
+    <input class="login-input" type="password" placeholder="Password">
+    <div class="terms-checkbox">
+      <input type="checkbox" required>
+      <label for="terms-checkbox">By continuing, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</label>
+    </div>
+  
+    <button class="login-button">Sign In</button>
+    <button class="signup-button">Create a new Amazon account</button>
+  </div>
+</body>
+</html>
